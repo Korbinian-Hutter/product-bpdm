@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: postgres
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
@@ -15,7 +15,12 @@ fullnameOverride: ""
 
 podSecurityContext: {}
 
-securityContext: {}
+securityContext:
+  allowPrivilegeEscalation: false
+  readOnlyRootFilesystem: true
+  capabilities:
+    drop:
+      - ALL
 
 applicationSecrets: dev-bpdm-application
 
