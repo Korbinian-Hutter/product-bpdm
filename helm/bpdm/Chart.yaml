@@ -29,9 +29,9 @@ dependencies:
     repository: file://charts/bpdm-elastic
     alias: elastic
     condition: elastic.enabled
-  - name: bpdm-postgres
-    version: 1.0.1
-    repository: file://charts/bpdm-postgres
+  - name: postgresql
+    version:  11.1.28
+    repository: https://charts.bitnami.com/bitnami
     alias: postgres
     condition: postgres.enabled
 
