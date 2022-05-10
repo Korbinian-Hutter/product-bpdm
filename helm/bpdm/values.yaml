@@ -98,8 +98,6 @@ applicationSecret:
 
 elastic:
   enabled: true
-  image:
-    tag: 7.17.3-debian-10-r17
   security:
     tls:
       restEncryption: false
