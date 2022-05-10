@@ -1,9 +1,9 @@
 dependencies:
-- name: bpdm-elastic
-  repository: file://charts/bpdm-elastic
-  version: 1.0.1
+- name: elasticsearch
+  repository: https://charts.bitnami.com/bitnami
+  version: 18.0.1
 - name: postgresql
   repository: https://charts.bitnami.com/bitnami
   version: 11.1.28
-digest: sha256:ceef2191ebcfe14cd7df6ee35ae9ae9749e2cef5139312f1044fb971902811c9
-generated: "2022-05-09T11:32:56.269156+02:00"
+digest: sha256:ae27afe68a5150e4271269b64165e007e83e1728318e4c43d4b325f7a2cf7ec2
+generated: "2022-05-10T09:02:31.933281+02:00"
