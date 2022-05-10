@@ -40,7 +40,7 @@ spec:
             - name: BPDM_DB_HOST
               value: {{ include "includeWithPostgresContext" (list $ "postgresql.primary.fullname") }}
             - name: BPDM_ELASTIC_HOST
-              value: {{ include "includeWithPostgresContext" (list $ "elasticsearch.service.name") }}
+              value: {{ include "includeWithElasticContext" (list $ "elasticsearch.service.name") }}
             - name: BPDM_KEYCLOAK_SECRET
               valueFrom:
                 secretKeyRef:
