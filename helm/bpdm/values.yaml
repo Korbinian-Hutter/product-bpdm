@@ -93,8 +93,8 @@ readinessProbe:
 
 applicationSecret:
   enabled: true
-  keycloak: <path:bpdm/dev/keycloak#credentials-secret>
-  cdq: <path:bpdm/dev/cdq#api-key>
+  keycloak: <path:bpdm/data/dev/keycloak#credentials-secret>
+  cdq: <path:bpdm/data/dev/cdq#api-key>
 
 elastic:
   enabled: true
@@ -108,6 +108,6 @@ postgres:
   nameOverride: bpdm-postgres
   auth:
     database: bpdm
-    postgresPassword: <path:bpdm/dev/postgresql#postgres-password>
+    postgresPassword: <path:bpdm/data/dev/postgresql#postgres-password>
     username: bpdm
-    password: <path:bpdm/dev/postgresql#password>
+    password: <path:bpdm/data/dev/postgresql#password>
