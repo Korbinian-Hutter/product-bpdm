@@ -102,6 +102,7 @@ elastic:
     tls:
       restEncryption: false
 
+
 postgres:
   enabled: true
   auth:

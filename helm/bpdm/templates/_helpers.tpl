@@ -64,7 +64,7 @@ Usage: include "includeWithPostgresContext" (list $ "your_include_function_here"
 {{- define "includeWithPostgresContext" -}}
 {{- $ := index . 0 }}
 {{- $function := index . 1 }}
-{{- include $function (dict "Values" $.Values.postgres "Chart" (dict "Name" "postgresql") "Release" $.Release) }}
+{{- include $function (dict "Values" $.Values.postgres "Chart" (dict "Name" "postgres") "Release" $.Release) }}
 {{- end }}
 
 {{/*
@@ -74,5 +74,5 @@ Usage: include "includeWithElasticContext" (list root "your_include_function_her
 {{- define "includeWithElasticContext" -}}
 {{- $ := index . 0 }}
 {{- $function := index . 1 }}
-{{- include $function (dict "Values" $.Values.elastic "Chart" (dict "Name" "elasticsearch") "Release" $.Release) }}
+{{- include $function (dict "Values" $.Values.elastic "Chart" (dict "Name" "elastic") "Release" $.Release) }}
 {{- end }}
