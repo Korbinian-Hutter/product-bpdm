@@ -54,7 +54,7 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 Create name of application secret
 */}}
 {{- define "bpdm.applicationSecret.name" -}}
-{{- printf "%s-secret" (include "bpdm.fullname" .) }}
+{{- printf "%s-application" (include "bpdm.fullname" .) }}
 {{- end }}
 
 {{/*

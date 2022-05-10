@@ -51,6 +51,8 @@ spec:
                 secretKeyRef:
                   name: {{ include "bpdm.applicationSecret.name" . }}
                   key: cdq-key
+            - name: BPDM_DB_USER
+              value: {{ .Values.postgres.auth.username }}
             - name: BPDM_DB_PASS
               valueFrom:
                 secretKeyRef:
