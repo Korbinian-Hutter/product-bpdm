@@ -98,14 +98,14 @@ applicationSecret:
 
 elastic:
   enabled: true
-  nameOverride: bpdm-elastic
+  image:
+    tag: 7.17.3-debian-10-r17
   security:
     tls:
       restEncryption: false
 
 postgres:
   enabled: true
-  nameOverride: bpdm-postgres
   auth:
     database: bpdm
     postgresPassword: <path:bpdm/data/dev/postgresql#postgres-password>
